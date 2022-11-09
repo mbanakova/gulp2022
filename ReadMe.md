@@ -9,3 +9,11 @@ press f1, type "open settings (JSON)", add:
 "@scss": "${folder}/src/scss",
 "@js": "${folder}/src/js"
 }
+
+После скачивания архива, оставить папки:
+gulp
+src
+gulpfile.js
+package.json
+
+npm i

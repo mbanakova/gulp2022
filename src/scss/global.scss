@@ -1,0 +1,52 @@
+@mixin font($size: 10px, $height: 10px, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  @include font();
+}
+
+body {
+  @include font(1.6rem, 2rem, 400);
+  font-family: Roboto, sans-serif;
+  background-color: $medium;
+  color: $white;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  @media (max-width: $tablet) {
+    &.no-scroll {
+      overflow-y: hidden;
+    }
+  }
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @media (max-width: $mobile) {
+    padding: 0 20px;
+  }
+}

@@ -1,10 +1,5 @@
 @import 'fonts';
-
-body {
-  font-family: Roboto, sans-serif;
-  background: url('@img/2.jpg') 0 0 no-repeat;
-}
-
-p {
-  font-size: 18px;
-}
+@import 'vars';
+@import 'global';
+@import 'header';
+@import 'footer';

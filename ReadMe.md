@@ -15,5 +15,7 @@ gulp
 src
 gulpfile.js
 package.json
+.prettierrc
+ReadMe.md
 
 npm i
